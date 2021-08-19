@@ -1,21 +1,23 @@
 import React from "react";
+import { View } from "react-native";
 
-import { Image, ImageBackground, Text, View } from "react-native";
-import SignInScreenImg from "../../assets/SignInScreen.png";
+import BackgroundSvg from "../../assets/background.svg";
+import LogoSvg from "../../assets/logo.svg";
+
+import { Button } from "../../components/Button";
+
 import { styles } from "./styles";
 
 export function SignIn() {
 	return (
 		<View style={styles.container}>
-			<ImageBackground
-				source={SignInScreenImg}
-				style={styles.backgroundImage}
-				resizeMode="stretch"
-			>
-				<View style={styles.content}>
-					<Text style={styles.text}>TESTE TESTE TESTE</Text>
-				</View>
-			</ImageBackground>
+			<BackgroundSvg style={styles.background} />
+
+			<LogoSvg />
+
+			<View style={styles.footer}>
+				<Button title="Venha Conhecer" />
+			</View>
 		</View>
 	);
 }
