@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { Background } from "../../components/Background";
 import { Header } from "../../components/Header";
-import { theme } from "../../global/styles/theme";
+import { ParkSelect } from "../../components/ParkSelect";
 
 import { styles } from "./styles";
 
 export function SelectPark() {
+	const [park, setPark] = useState("");
+
 	return (
 		<Background>
 			<View style={styles.container}>
 				<Header title="Selecione o Parque" />
-				<Text style={styles.content} colors={theme.colors.black}>
-					TESTE TESTE
-				</Text>
+
+				<ParkSelect hasCheckBox setPark={setPark} parkSelected={park} />
 			</View>
 		</Background>
 	);

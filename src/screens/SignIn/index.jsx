@@ -23,7 +23,7 @@ export function SignIn() {
 			<LogoSvg />
 
 			<View style={styles.footer}>
-				<Button title="Venha Conhecer" onPress={handleSignIn} />
+				<Button title="Agende seu espaço" onPress={handleSignIn} />
 			</View>
 		</View>
 	);
