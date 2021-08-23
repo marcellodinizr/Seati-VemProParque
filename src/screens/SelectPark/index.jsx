@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-
 import { View } from "react-native";
+
+import { ParkSelect } from "../../components/ParkSelect";
 import { Background } from "../../components/Background";
 import { Header } from "../../components/Header";
-import { ParkSelect } from "../../components/ParkSelect";
 
 import { styles } from "./styles";
+import { ScrollView } from "react-native-gesture-handler";
 
 export function SelectPark() {
 	const [park, setPark] = useState("");
@@ -14,8 +15,9 @@ export function SelectPark() {
 		<Background>
 			<View style={styles.container}>
 				<Header title="Selecione o Parque" />
-
-				<ParkSelect hasCheckBox setPark={setPark} parkSelected={park} />
+				<ScrollView>
+					<ParkSelect setPark={setPark} parkSelected={park} />
+				</ScrollView>
 			</View>
 		</Background>
 	);
