@@ -13,7 +13,7 @@ export function SignIn() {
 	const navigation = useNavigation();
 
 	function handleSignIn() {
-		navigation.navigate("SelectPark");
+		navigation.navigate("AppointmentPark");
 	}
 
 	return (
