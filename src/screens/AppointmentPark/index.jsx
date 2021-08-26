@@ -7,6 +7,7 @@ import { ScrollView } from "react-native-gesture-handler";
 import { ParkSelect } from "../../components/ParkSelect";
 import { Background } from "../../components/Background";
 import { Header } from "../../components/Header";
+import { Button } from "../../components/Button";
 
 import { styles } from "./styles";
 
@@ -24,12 +25,11 @@ export function AppointmentPark() {
 			<View style={styles.container}>
 				<Header title="Selecione o Parque" />
 				<ScrollView>
-					<ParkSelect
-						setPark={setPark}
-						parkSelected={park}
-						onPress={handleAppointmentCourt}
-					/>
+					<ParkSelect setPark={setPark} parkSelected={park} />
 				</ScrollView>
+				<View style={styles.footer}>
+					<Button title="Selecione o espaço" onPress={handleAppointmentCourt} />
+				</View>
 			</View>
 		</Background>
 	);
