@@ -5,6 +5,7 @@ export const theme = {
 		orange: "#BA642A",
 		white: "#FFF",
 		black: "#000",
+		on: "#32BD50",
 	},
 
 	fonts: {
