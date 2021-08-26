@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { getBottomSpace } from "react-native-iphone-x-helper";
 
 export const styles = StyleSheet.create({
 	container: {
@@ -13,8 +14,14 @@ export const styles = StyleSheet.create({
 		height: "100%",
 	},
 
+	logo: {
+		marginTop: 40,
+	},
+
 	footer: {
 		width: "90%",
-		marginTop: 200,
+		marginTop: 250,
+
+		marginBottom: getBottomSpace(),
 	},
 });

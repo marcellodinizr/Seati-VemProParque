@@ -20,7 +20,7 @@ export function SignIn() {
 		<View style={styles.container}>
 			<BackgroundSvg style={styles.background} />
 
-			<LogoSvg />
+			<LogoSvg style={styles.logo} />
 
 			<View style={styles.footer}>
 				<Button title="Agende seu espaço" onPress={handleSignIn} />
