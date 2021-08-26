@@ -4,7 +4,7 @@ import { styles } from "./styles";
 import { parks } from "../../utils/parks";
 import { Park } from "../Park";
 
-export function ParkSelect({ setPark }) {
+export function ParkSelect({ parkSelected, setPark, hasCheckBox = false }) {
 	return (
 		<ScrollView
 			vertical
@@ -16,7 +16,9 @@ export function ParkSelect({ setPark }) {
 					key={park.id}
 					title={park.title}
 					icon={park.icon}
+					checked={park.id === parkSelected}
 					onPress={() => setPark(park.id)}
+					hasCheckBox={hasCheckBox}
 				/>
 			))}
 		</ScrollView>
