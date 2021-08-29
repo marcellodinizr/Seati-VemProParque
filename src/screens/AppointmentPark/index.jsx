@@ -28,7 +28,7 @@ export function AppointmentPark() {
 					<ParkSelect setPark={setPark} parkSelected={park} />
 				</ScrollView>
 				<View style={styles.footer}>
-					<Button title="Selecione o espaço" onPress={handleAppointmentCourt} />
+					<Button title="Proximo" onPress={handleAppointmentCourt} />
 				</View>
 			</View>
 		</Background>
