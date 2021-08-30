@@ -15,7 +15,7 @@ export function Park({
 	return (
 		<RectButton {...rest}>
 			<View style={styles.container}>
-				<View style={[styles.content, { opacity: checked ? 1 : 0.7 }]}>
+				<View style={[styles.content, { opacity: checked ? 1 : 0.8 }]}>
 					<Icon width={52} height={48} />
 
 					<Text
