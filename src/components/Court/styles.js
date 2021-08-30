@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
 		width: "100%",
 		height: 80,
 		alignItems: "center",
-		paddingLeft: 10,
+		paddingLeft: 5,
 	},
 
 	title: {
@@ -20,5 +20,10 @@ export const styles = StyleSheet.create({
 		color: theme.colors.green,
 		fontSize: 22,
 		marginLeft: 20,
+	},
+	icon: {
+		padding: 5,
+		borderRadius: 12,
+		backgroundColor: theme.colors.white,
 	},
 });

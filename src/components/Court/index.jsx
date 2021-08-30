@@ -15,8 +15,10 @@ export function Court({
 	return (
 		<RectButton {...rest}>
 			<View style={styles.container}>
-				<View style={[styles.content, { opacity: checked ? 1 : 0.7 }]}>
-					<Icon width={52} height={48} />
+				<View style={[styles.content, { opacity: checked ? 1 : 0.8 }]}>
+					<View style={styles.icon}>
+						<Icon width={52} height={48} />
+					</View>
 
 					<Text
 						style={[
