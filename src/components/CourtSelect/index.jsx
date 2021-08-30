@@ -4,7 +4,7 @@ import { styles } from "./styles";
 import { courts } from "../../utils/courts";
 import { Court } from "../Court";
 
-export function CourtSelect({ setCourt }) {
+export function CourtSelect({ courtSelected, setCourt, hasCheckBox = false }) {
 	return (
 		<ScrollView
 			vertical
@@ -16,7 +16,9 @@ export function CourtSelect({ setCourt }) {
 					key={court.id}
 					title={court.title}
 					icon={court.icon}
+					checked={court.id === courtSelected}
 					onPress={() => setCourt(court.id)}
+					hasCheckBox={hasCheckBox}
 				/>
 			))}
 		</ScrollView>
