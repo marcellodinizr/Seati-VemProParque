@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { SignIn } from "../screens/SignIn";
 import { AppointmentPark } from "../screens/AppointmentPark";
 import { AppointmentCourt } from "../screens/AppointmentCourt";
+import { AppointmentSchedule } from "../screens/AppointmentSchedule";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -20,6 +21,7 @@ export function AuthRoutes() {
 			<Screen name="SignIn" component={SignIn} />
 			<Screen name="AppointmentPark" component={AppointmentPark} />
 			<Screen name="AppointmentCourt" component={AppointmentCourt} />
+			<Screen name="AppointmentSchedule" component={AppointmentSchedule} />
 		</Navigator>
 	);
 }
