@@ -43,6 +43,7 @@ export function CalendarSchedule() {
 					mode={mode}
 					is24Hour={true}
 					display="default"
+					minuteInterval={30}
 					locale="pt-BR"
 					onChange={onChange}
 				/>
