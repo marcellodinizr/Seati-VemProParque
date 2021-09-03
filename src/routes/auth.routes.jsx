@@ -5,6 +5,7 @@ import { SignIn } from "../screens/SignIn";
 import { AppointmentPark } from "../screens/AppointmentPark";
 import { AppointmentCourt } from "../screens/AppointmentCourt";
 import { AppointmentSchedule } from "../screens/AppointmentSchedule";
+import { AppointmentRegistration } from "../screens/AppointmentRegistration";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -22,6 +23,10 @@ export function AuthRoutes() {
 			<Screen name="AppointmentPark" component={AppointmentPark} />
 			<Screen name="AppointmentCourt" component={AppointmentCourt} />
 			<Screen name="AppointmentSchedule" component={AppointmentSchedule} />
+			<Screen
+				name="AppointmentRegistration"
+				component={AppointmentRegistration}
+			/>
 		</Navigator>
 	);
 }
