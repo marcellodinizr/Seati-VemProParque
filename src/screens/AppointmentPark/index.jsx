@@ -25,7 +25,9 @@ export function AppointmentPark() {
 			<View style={styles.container}>
 				<Header title="Selecione o Parque" />
 				<ScrollView>
-					<ParkSelect setPark={setPark} parkSelected={park} />
+					<View>
+						<ParkSelect setPark={setPark} parkSelected={park} />
+					</View>
 				</ScrollView>
 				<View style={styles.footer}>
 					<Button title="Proximo" onPress={handleAppointmentCourt} />

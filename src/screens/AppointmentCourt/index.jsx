@@ -25,7 +25,9 @@ export function AppointmentCourt() {
 			<View style={styles.container}>
 				<Header title="Selecione o Espaço" />
 				<ScrollView>
-					<CourtSelect setCourt={setCourt} courtSelected={court} />
+					<View>
+						<CourtSelect setCourt={setCourt} courtSelected={court} />
+					</View>
 				</ScrollView>
 
 				<View style={styles.footer}>
